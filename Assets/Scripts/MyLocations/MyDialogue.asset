@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7abfd94d4d8eb47a5d4fced2a8ec1e, type: 3}
+  m_Name: MyDialogue
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - ID: 0
+    image: {fileID: 21300000, guid: aef16977c9da3b148b18e9c9cade53b5, type: 3}
+    targetID: 1
+    text: You know what makes me a burger?
+    options: []
+  - ID: 1
+    image: {fileID: 21300000, guid: 43aa67dc62ac5aa419b0c0125ff959ab, type: 3}
+    targetID: 
+    text: How do you define a burger? Am I a burger? I'm having midlife crisis rn!!!
+    options:
+    - text: Yes, you are a burger
+      targetID: 4
+    - text: C'mon, be a happy sandwich
+      targetID: 2
+  - ID: 2
+    image: {fileID: 21300000, guid: 43aa67dc62ac5aa419b0c0125ff959ab, type: 3}
+    targetID: 3
+    text: Yeehee! I'm a happy sandwich again
+    options: []
+  - ID: 3
+    image: {fileID: 21300000, guid: aef16977c9da3b148b18e9c9cade53b5, type: 3}
+    targetID: 4
+    text: Nay, you're just like me. One meat between two buns.
+    options: []
+  - ID: 4
+    image: {fileID: 21300000, guid: 43aa67dc62ac5aa419b0c0125ff959ab, type: 3}
+    targetID: 5
+    text: WHAT! Can't believe it that I've been calling myself a sandwich for my
+      life...
+    options: []
+  - ID: 5
+    image: {fileID: 21300000, guid: aef16977c9da3b148b18e9c9cade53b5, type: 3}
+    targetID: 
+    text: No worries, buddy. Everyone makes mis-steaks
+    options: []

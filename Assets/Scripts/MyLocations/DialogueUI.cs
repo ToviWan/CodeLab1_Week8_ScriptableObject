@@ -31,8 +31,8 @@ public class DialogueUI : Singleton<DialogueUI>
         nextButton.onClick.AddListener(ContinueDialogue);
         ContinueDialogue();
     }
-
-    
+   
+   
     void ContinueDialogue()
     {
         if (currentIndex < currentData.dialoguePieces.Count)
@@ -45,8 +45,8 @@ public class DialogueUI : Singleton<DialogueUI>
           
         }
     }
-
     
+  //update the text displayed from the source
     public void UpdateDialogueData(DialougeData_SO data)
     {
         currentData = data;
@@ -55,16 +55,17 @@ public class DialogueUI : Singleton<DialogueUI>
 
 
     
-
+    //update the dialogue, panel, avatar, button
     public void UpdateMainDialogue(DialoguePiece piece)
     {
-        if (piece == null) {
+        if (piece == null) 
+        {
             dialoguePanel.SetActive(false);
             return;
         }
         dialoguePanel.SetActive(true);
-        if(piece.targetID!="")
-        currentIndex=int.Parse(piece.targetID);
+        if(piece.targetID!="") 
+            currentIndex=int.Parse(piece.targetID);
       
         if (piece.image != null)
         {
@@ -93,7 +94,7 @@ public class DialogueUI : Singleton<DialogueUI>
     }
 
 
-    
+    //create options for the player
     void CreateOptions(DialoguePiece piece)
     {
         if (optionPanel.childCount > 0)

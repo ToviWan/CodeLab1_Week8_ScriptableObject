@@ -7,7 +7,7 @@ using UnityEngine;
 public class DialougeData_SO : ScriptableObject
 {
 
-    
+    //store the dialogue pieces in the list
     public List<DialoguePiece> dialoguePieces = new List<DialoguePiece>();
     public Dictionary<string, DialoguePiece> dialogueIndex = new Dictionary<string, DialoguePiece>();
 

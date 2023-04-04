@@ -19,7 +19,7 @@ public class OptionUI : MonoBehaviour
         thisButton.onClick.AddListener(OnOptionClicked);
     }
 
-    
+    //update the text displayed in the option
     public void UpdateOption(DialoguePiece piece, DialogueOption option)
     {
         currentPiece = piece;
@@ -29,13 +29,13 @@ public class OptionUI : MonoBehaviour
     }
 
 
-    
+    //update the dialogue when player clicks next
     public void OnOptionClicked()
     {
        
         if (nextPieceID == "")
         {
-            DialogueUI.Instance.dialoguePanel.SetActive(false);
+            DialogueUI.Instance.dialoguePanel.SetActive(false);//the story ends
             return;
         }
         else if (!DialogueUI.Instance.currentData.dialogueIndex.ContainsKey(nextPieceID)) {
